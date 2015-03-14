@@ -415,7 +415,7 @@ or jump right into [Usage]({{ BASE_PATH }}{{ site.categories.usage.first.url }})
             
 $$E=mc^2$$
 
-Inline 行内的公式$$E=mc^2$$行内的公式，行内的$$E=mc^2$$公式。
+Inline 行内的公式\\( E=mc^2 \\)行内的公式，行内的\\(E=mc^2\\)公式。
 
 $$c = \\pm\\sqrt{a^2 + b^2}$$
 
