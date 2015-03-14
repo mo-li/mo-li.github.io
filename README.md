@@ -1,40 +1,46 @@
-# Jekyll-Bootstrap
+[TOC]
 
-The quickest way to start and publish your Jekyll powered blog. 100% compatible with GitHub pages
+####Setting
 
-## Usage
+    {
+        tex  : true
+    }
 
-For all usage and documentation please see: <http://jekyllbootstrap.com>
+####Examples
+            
+$$E=mc^2$$
 
-## Version
+Inline 行内的公式$$E=mc^2$$行内的公式，行内的$$E=mc^2$$公式。
 
-0.3.0 - stable and versioned using [semantic versioning](http://semver.org/).
+$$c = \\pm\\sqrt{a^2 + b^2}$$
 
-**NOTE:** 0.3.0 introduces a new theme which is not backwards compatible in the sense it won't _look_ like the old version.
-However, the actual API has not changed at all.
-You might want to run 0.3.0 in a branch to make sure you are ok with the theme design changes.
+$$f(x) = x^2$$
 
-## Contributing
+$$\alpha = \sqrt{1-e^2}$$
 
+$$\(\sqrt{3x-1}+(1+x)^2\)$$
+             
+$$\sin(\alpha)^{\theta}=\sum_{i=0}^{n}(x^i + \cos(f))$$
 
-To contribute to the framework please make sure to checkout your branch based on `jb-development`!!
-This is very important as it allows me to accept your pull request without having to publish a public version release.
+$$\\dfrac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$$
 
-Small, atomic Features, bugs, etc.
-Use the `jb-development` branch but note it will likely change fast as pull requests are accepted.
-Please rebase as often as possible when working.
-Work on small, atomic features/bugs to avoid upstream commits affecting/breaking your development work.
+$$f(x) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi$$
 
-For Big Features or major API extensions/edits:
-This is the one case where I'll accept pull-requests based off the master branch.
-This allows you to work in isolation but it means I'll have to manually merge your work into the next public release.
-Translation : it might take a bit longer so please be patient! (but sincerely thank you).
+$$\displaystyle \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } }$$
 
-**Jekyll-Bootstrap Documentation Website.**
+$$\displaystyle \left( \sum\_{k=1}^n a\_k b\_k \right)^2 \leq \left( \sum\_{k=1}^n a\_k^2 \right) \left( \sum\_{k=1}^n b\_k^2 \right)$$
 
-The documentation website at <http://jekyllbootstrap.com> is maintained at https://github.com/plusjade/jekyllbootstrap.com
+####Custom KaTeX source URL
 
+```javascript
+// Default using CloudFlare KaTeX's CDN
+// You can custom url
+editormd.katexURL = {
+    js  : "your url",
+    css : "your url"
+};
+```
 
-## License
+#### KaTeX vs MathJax
 
-[MIT](http://opensource.org/licenses/MIT)
+[https://jsperf.com/katex-vs-mathjax](https://jsperf.com/katex-vs-mathjax "KaTeX vs MathJax")
